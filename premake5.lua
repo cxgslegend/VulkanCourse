@@ -55,12 +55,13 @@ project "VulkanEngine"
 		"%{Path.lib}"
 	}
 
-	-- This part isn't working
+	-- When linking to system libraries, don't include prefix or filetyep
+	-- https://github.com/premake/premake-core/issues/1322
 	links
 	{
-		"libglfw.3.3.dylib",
-		"libvulkan.1.2.141.dylib",
-		"libvulkan.1.dylib"
+		"glfw.3.3",
+		"vulkan.1.2.141",
+		"vulkan.1"
 	}
 
 	filter "system:windows"
@@ -119,13 +120,14 @@ project "Sandbox"
 		"%{Path.lib}"
 	}
 
-	-- This part isn't working
+	-- When linking to system libraries, don't include prefix or filetyep
+	-- https://github.com/premake/premake-core/issues/1322
 	links
 	{
 		"VulkanEngine",
-		"libglfw.3.3.dylib",
-		"libvulkan.1.2.141.dylib",
-		"libvulkan.1.dylib"
+		"glfw.3.3",
+		"vulkan.1.2.141",
+		"vulkan.1"
 	}
 
 	filter "system:windows"
