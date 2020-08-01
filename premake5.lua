@@ -76,6 +76,9 @@ project "VulkanEngine"
 
 		defines
 		{
+			GLFW_INCLUDE_VULKAN,
+			GLM_FORCE_RADIANS,
+			GLM_FORCE_DEPTH_ZERO_TO_ONE
 		}
 
 	filter "configurations:Debug"
