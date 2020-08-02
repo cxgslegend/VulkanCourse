@@ -55,7 +55,7 @@ project "VulkanEngine"
 		"%{Path.lib}"
 	}
 
-	-- When linking to system libraries, don't include prefix or filetyep
+	-- When linking to system libraries, don't include prefix or filetype
 	-- https://github.com/premake/premake-core/issues/1322
 	links
 	{
@@ -123,7 +123,7 @@ project "Sandbox"
 		"%{Path.lib}"
 	}
 
-	-- When linking to system libraries, don't include prefix or filetyep
+	-- When linking to system libraries, don't include prefix or filetype
 	-- https://github.com/premake/premake-core/issues/1322
 	links
 	{
